@@ -17,13 +17,11 @@ const Login: React.FC = () => {
   };
 
   const handleGoogleLogin = () => {
-    console.log('Logando com Google...');
 
     router.push('/paginas/index');
   };
 
   const handleFacebookLogin = () => {
-    console.log('Logando com Facebook...');
 
     router.push('/pagina/index');
   };

@@ -16,14 +16,8 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ onClose }) => {
   const router = useRouter();
 
   const handleRegister = () => {
-    if (password !== confirmPassword) {
-      alert('As senhas não coincidem!');
-      return;
-    }
 
-    console.log('Nome:', name);
-    console.log('Email:', email);
-    console.log('Senha:', password);
+    onClose();
 
     router.push('/paginas/index');
   };

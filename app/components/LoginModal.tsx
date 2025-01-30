@@ -14,11 +14,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ onClose }) => {
   const router = useRouter();
 
   const handleLogin = () => {
-    console.log('Email:', email);
-    console.log('Senha:', password);
-    // Aqui você pode adicionar a lógica de autenticação
-
-    // Redireciona para a página Home após o login
+    onClose();
     router.push('/paginas/index');
   };
 
